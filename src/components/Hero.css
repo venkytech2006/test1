@@ -15,7 +15,7 @@
   right: -150px;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(242, 80, 48, 0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(242, 80, 48, 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -26,7 +26,7 @@
   left: -100px;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(242, 80, 48, 0.04) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(242, 80, 48, 0.06) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -85,13 +85,13 @@
 }
 
 .hero-line-light {
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
   font-weight: 400;
 }
 
 .hero-description {
   font-size: 1.05rem;
-  color: var(--text-secondary);
+  color: var(--text-tertiary);
   line-height: 1.75;
   max-width: 480px;
 }

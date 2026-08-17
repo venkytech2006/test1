@@ -15,7 +15,7 @@
   left: -150px;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(242, 80, 48, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(242, 80, 48, 0.12) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -40,7 +40,7 @@
 
 .contact-sub {
   font-size: 1.08rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   line-height: 1.75;
   max-width: 560px;
 }
@@ -87,7 +87,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .form-field input,
@@ -97,8 +97,8 @@
   font-size: 0.95rem;
   font-weight: 500;
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-sm);
   padding: 0.85rem 1rem;
   outline: none;
@@ -222,7 +222,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .cd-value {
