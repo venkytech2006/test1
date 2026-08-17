@@ -1,10 +1,10 @@
 /* =========================================
-   SERVICES — Clean asymmetric layout
+   SERVICES — Brand-integrated
    ========================================= */
 .services {
   position: relative;
   overflow: hidden;
-  background: var(--bg-secondary);
+  background: var(--brand-soft);
 }
 
 .services-top-row {
@@ -23,6 +23,10 @@
   color: var(--text-primary);
   margin: 1.5rem 0 0;
   max-width: 600px;
+}
+
+.services-cta-header {
+  flex-shrink: 0;
 }
 
 /* FEATURED SERVICE */
@@ -78,9 +82,9 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-md);
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
-  border: 1px solid var(--border-light);
+  background: var(--brand-soft);
+  color: var(--brand-primary);
+  border: 1px solid var(--border-brand);
 }
 
 .sf-title {
@@ -109,21 +113,17 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-primary);
+  color: var(--brand-primary);
   transition: var(--transition-fast);
 }
 
 .sf-link svg {
-  color: var(--text-muted);
+  color: var(--brand-primary);
   transition: var(--transition-fast);
 }
 
-.sf-link:hover {
-  color: var(--accent-orange);
-}
-
 .sf-link:hover svg {
-  color: var(--accent-orange);
+  transform: translate(3px, -2px);
 }
 
 /* Mock browser */
@@ -136,7 +136,7 @@
 .sf-mock-browser {
   width: 100%;
   max-width: 360px;
-  background: var(--bg-secondary);
+  background: var(--bg-card);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -147,7 +147,7 @@
   gap: 5px;
   padding: 0.6rem 1rem;
   border-bottom: 1px solid var(--border-light);
-  background: var(--bg-card);
+  background: var(--bg-secondary);
 }
 
 .sf-mock-dots span {
@@ -188,7 +188,8 @@
 }
 
 .sf-mock-block.accent {
-  background: rgba(201, 106, 61, 0.08);
+  background: var(--brand-soft-mid);
+  border: 1px solid var(--border-brand);
 }
 
 /* SUPPORTING SERVICES */
@@ -218,6 +219,7 @@
 
 .service-panel:hover {
   box-shadow: var(--shadow-sm);
+  border-color: var(--border-brand);
 }
 
 .sp-top {
@@ -243,9 +245,9 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-md);
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
-  border: 1px solid var(--border-light);
+  background: var(--brand-soft);
+  color: var(--brand-primary);
+  border: 1px solid var(--border-brand);
 }
 
 .service-panel h3 {
@@ -272,21 +274,17 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-primary);
+  color: var(--brand-primary);
   transition: var(--transition-fast);
 }
 
 .sp-link svg {
-  color: var(--text-muted);
+  color: var(--brand-primary);
   transition: var(--transition-fast);
 }
 
-.sp-link:hover {
-  color: var(--accent-orange);
-}
-
 .sp-link:hover svg {
-  color: var(--accent-orange);
+  transform: translate(3px, -2px);
 }
 
 /* BOTTOM STATEMENT */
@@ -296,16 +294,19 @@
   justify-content: space-between;
   gap: 3rem;
   padding: 2.5rem 3rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border-light);
+  background: var(--brand-dark);
   border-radius: var(--radius-lg);
 }
 
 .services-bottom-statement p {
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 1.05rem;
   line-height: 1.7;
   max-width: 600px;
+}
+
+.services-bottom-statement .btn-primary {
+  flex-shrink: 0;
 }
 
 /* RESPONSIVE */

@@ -1,5 +1,5 @@
 /* =========================================
-   PARTNERS — Understated Marquee
+   PARTNERS — Brand-integrated marquee
    ========================================= */
 .partners {
   position: relative;
@@ -62,18 +62,21 @@
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  background: var(--text-primary);
+  background: var(--brand-primary);
   border-radius: 50%;
-  transition: var(--transition-smooth);
+  transition:
+    background-color 250ms ease,
+    transform 250ms ease;
 }
 
 .partners-btn:hover {
-  border-color: var(--accent-orange);
+  border-color: var(--brand-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(242, 84, 48, 0.18);
 }
 
 .partners-btn:hover .btn-icon {
-  background: var(--accent-orange);
-  transform: rotate(45deg);
+  transform: translate(3px, -2px);
 }
 
 /* MARQUEE */
@@ -150,7 +153,8 @@
 }
 
 .partner-logo-item:hover {
-  border-color: var(--border-medium);
+  border-color: var(--border-brand);
+  background: var(--brand-soft);
 }
 
 .partner-logo-item:hover h3 {

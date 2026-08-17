@@ -1,9 +1,27 @@
 /* =========================================
-   CONTACT — Dramatic Typography CTA
+   CONTACT — Deep brand section
    ========================================= */
 .contact {
   position: relative;
   overflow: hidden;
+  background: var(--brand-dark);
+  color: #ffffff;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  bottom: -200px;
+  left: -150px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(242, 80, 48, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.contact .container {
+  position: relative;
+  z-index: 2;
 }
 
 .contact-hero {
@@ -15,14 +33,14 @@
   font-weight: 700;
   line-height: 1.02;
   letter-spacing: -0.045em;
-  color: var(--text-primary);
+  color: #ffffff;
   margin: 1.5rem 0 1.5rem;
   max-width: 700px;
 }
 
 .contact-sub {
   font-size: 1.08rem;
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.5);
   line-height: 1.75;
   max-width: 560px;
 }
@@ -37,15 +55,12 @@
 
 /* FORM */
 .contact-form-wrap {
-  background: var(--bg-card);
-  border: 1px solid var(--border-light);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-lg);
   padding: 3rem;
-  transition: var(--transition-smooth);
-}
-
-.contact-form-wrap:hover {
-  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .contact-form-wrap form {
@@ -72,7 +87,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .form-field input,
@@ -81,9 +96,9 @@
   font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 500;
-  color: var(--text-primary);
-  background: var(--bg-primary);
-  border: 1px solid var(--border-light);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-sm);
   padding: 0.85rem 1rem;
   outline: none;
@@ -93,20 +108,21 @@
 
 .form-field input::placeholder,
 .form-field textarea::placeholder {
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.3);
   font-weight: 400;
 }
 
 .form-field input:focus,
 .form-field select:focus,
 .form-field textarea:focus {
-  border-color: var(--text-primary);
+  border-color: var(--brand-primary);
+  background: rgba(242, 80, 48, 0.05);
 }
 
 .form-field select {
   cursor: pointer;
   appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23A3A39C' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 6l3.5 3.5L11.5 6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='rgba(255,255,255,0.4)' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 6l3.5 3.5L11.5 6'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 1rem center;
   padding-right: 2.5rem;
@@ -117,9 +133,9 @@
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  background: var(--text-primary);
+  background: var(--brand-primary);
   color: #ffffff;
-  border: none;
+  border: 1px solid var(--brand-primary);
   border-radius: var(--radius-sm);
   padding: 0.9rem 2rem;
   font-family: var(--font-mono);
@@ -128,18 +144,26 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   cursor: pointer;
-  transition: var(--transition-smooth);
+  transition:
+    background-color 250ms ease,
+    color 250ms ease,
+    border-color 250ms ease,
+    transform 250ms ease,
+    box-shadow 250ms ease;
   width: 100%;
 }
 
 .form-submit:hover {
-  background: var(--accent-orange);
+  background: var(--brand-primary-light);
+  border-color: var(--brand-primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(242, 84, 48, 0.25);
 }
 
 .form-submit:disabled {
   opacity: 0.5;
   cursor: default;
-  background: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 /* CONTACT DETAILS */
@@ -147,8 +171,8 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  background: var(--bg-card);
-  border: 1px solid var(--border-light);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-lg);
   overflow: hidden;
 }
@@ -159,7 +183,7 @@
   gap: 1.25rem;
   padding: 2rem 2.5rem;
   transition: var(--transition-fast);
-  border-bottom: 1px solid var(--border-light);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .contact-detail:last-child {
@@ -167,7 +191,7 @@
 }
 
 .contact-detail:hover {
-  background: rgba(201, 106, 61, 0.02);
+  background: rgba(242, 80, 48, 0.05);
 }
 
 .cd-icon {
@@ -176,16 +200,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg-secondary);
+  background: rgba(242, 80, 48, 0.1);
   border-radius: var(--radius-md);
-  color: var(--text-secondary);
+  color: var(--brand-primary-light);
   flex-shrink: 0;
-  border: 1px solid var(--border-light);
 }
 
 .contact-detail:hover .cd-icon {
-  color: var(--accent-orange);
-  border-color: rgba(201, 106, 61, 0.15);
+  background: rgba(242, 80, 48, 0.15);
 }
 
 .cd-text {
@@ -200,18 +222,18 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .cd-value {
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #ffffff;
   text-decoration: none;
 }
 
 a.cd-value:hover {
-  color: var(--accent-orange);
+  color: var(--brand-primary-light);
 }
 
 /* RESPONSIVE */
@@ -227,7 +249,7 @@ a.cd-value:hover {
   .contact-detail {
     flex: 1;
     border-bottom: none;
-    border-right: 1px solid var(--border-light);
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
     flex-direction: column;
     text-align: center;
     gap: 0.75rem;
@@ -257,7 +279,7 @@ a.cd-value:hover {
 
   .contact-detail {
     border-right: none;
-    border-bottom: 1px solid var(--border-light);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     flex-direction: row;
     text-align: left;
   }

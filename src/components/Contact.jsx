@@ -23,7 +23,7 @@ function Contact() {
     };
 
     return (
-        <section className="contact section-lg" id="contact" style={{ background: 'var(--bg-secondary)' }}>
+        <section className="contact section-lg dark-section" id="contact">
             <div className="container">
                 {/* Large heading */}
                 <motion.div

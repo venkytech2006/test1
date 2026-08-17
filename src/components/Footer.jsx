@@ -8,7 +8,7 @@ function Footer() {
                 {/* Top */}
                 <div className="footer-top">
                     <div className="footer-brand">
-                        <a href="#hero" className="footer-logo">zenrise</a>
+                        <a href="#hero" className="footer-logo"><span className="footer-logo-accent">zen</span>rise</a>
                         <p>
                             Helping businesses win customers and accelerate digital growth. Your brand can perform beyond ordinary.
                         </p>

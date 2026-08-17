@@ -51,7 +51,7 @@ function Services() {
     const others = services.slice(1);
 
     return (
-        <section className="services section-lg" id="services" style={{ background: 'var(--bg-secondary)' }}>
+        <section className="services section-lg" id="services">
             <div className="container">
                 {/* Header */}
                 <div className="services-top-row">

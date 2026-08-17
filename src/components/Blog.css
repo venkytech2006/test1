@@ -1,5 +1,5 @@
 /* =========================================
-   BLOG — Editorial Publication
+   BLOG — Brand-integrated editorial
    ========================================= */
 .blog {
   position: relative;
@@ -21,6 +21,10 @@
   letter-spacing: -0.04em;
   color: var(--text-primary);
   margin: 1.5rem 0 5rem;
+}
+
+.blog-view-all {
+  flex-shrink: 0;
 }
 
 /* EDITORIAL GRID */
@@ -57,7 +61,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.03), transparent 50%);
+  background: linear-gradient(to top, rgba(28, 18, 20, 0.04), transparent 50%);
   pointer-events: none;
 }
 
@@ -68,7 +72,7 @@
   font-family: var(--font-heading);
   font-size: 5rem;
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.15);
   line-height: 1;
   letter-spacing: -0.03em;
   z-index: 2;
@@ -93,7 +97,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--accent-orange);
+  color: var(--brand-primary);
 }
 
 .blog-feat-date {
@@ -128,7 +132,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-primary);
+  color: var(--brand-primary);
   transition: var(--transition-fast);
 }
 
@@ -136,8 +140,8 @@
   transition: var(--transition-fast);
 }
 
-.blog-feat-link:hover {
-  color: var(--accent-orange);
+.blog-feat-link:hover svg {
+  transform: translate(3px, -2px);
 }
 
 /* SECONDARY ARTICLES */
@@ -203,7 +207,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--accent-orange);
+  color: var(--brand-primary);
 }
 
 .blog-sec-date {
@@ -224,7 +228,7 @@
 }
 
 .blog-secondary:hover .blog-sec-content h3 {
-  color: var(--accent-orange);
+  color: var(--brand-primary);
 }
 
 .blog-sec-content p {
@@ -248,7 +252,7 @@
 }
 
 .blog-sec-link:hover {
-  color: var(--accent-orange);
+  color: var(--brand-primary);
 }
 
 /* RESPONSIVE */

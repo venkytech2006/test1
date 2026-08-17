@@ -1,11 +1,21 @@
 /* =========================================
-   FOOTER — Deep Charcoal Finish
+   FOOTER — Deepest brand color
    ========================================= */
 .footer {
-  background: var(--text-primary);
+  background: var(--brand-dark);
   color: #ffffff;
   padding: 6rem 0 0;
   position: relative;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--brand-primary), transparent);
 }
 
 .footer .container {
@@ -38,6 +48,10 @@
   text-decoration: none;
 }
 
+.footer-logo .footer-logo-accent {
+  color: var(--brand-primary);
+}
+
 .footer-brand p {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.4);
@@ -57,7 +71,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: rgba(255, 255, 255, 0.25);
+  color: var(--brand-primary);
   margin-bottom: 0.5rem;
 }
 
@@ -92,20 +106,32 @@
 }
 
 .footer-contact-row:hover {
-  color: #ffffff;
+  color: var(--brand-primary-light);
 }
 
 .footer-btn {
   margin-top: 0.5rem;
-  background: var(--accent-orange);
+  background: var(--brand-primary);
   color: #ffffff;
+  border: 1px solid var(--brand-primary);
   width: fit-content;
-  transition: var(--transition-smooth);
+  transition:
+    background-color 250ms ease,
+    color 250ms ease,
+    border-color 250ms ease,
+    transform 250ms ease,
+    box-shadow 250ms ease;
 }
 
 .footer-btn:hover {
-  background: #ffffff;
-  color: var(--text-primary);
+  background: var(--brand-primary-light);
+  border-color: var(--brand-primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(242, 84, 48, 0.25);
+}
+
+.footer-btn:hover .btn-icon {
+  transform: translate(3px, -2px);
 }
 
 /* SEPARATOR */
@@ -143,7 +169,7 @@
 }
 
 .footer-bottom-links a:hover {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--brand-primary-light);
 }
 
 /* RESPONSIVE */

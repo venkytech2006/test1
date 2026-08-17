@@ -41,7 +41,7 @@ function Testimonials() {
     const testimonial = testimonials[current];
 
     return (
-        <section className="testimonials section-lg" id="testimonials">
+        <section className="testimonials section-lg dark-section" id="testimonials">
             <div className="container">
                 {/* Header row */}
                 <div className="test-top-row">

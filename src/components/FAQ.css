@@ -1,5 +1,5 @@
 /* =========================================
-   FAQ — Minimal, Clean
+   FAQ — Brand-integrated clean accordion
    ========================================= */
 .faq {
   position: relative;
@@ -46,7 +46,7 @@
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.03em;
-  color: var(--text-primary);
+  color: var(--brand-primary);
 }
 
 .faq-stat-label {
@@ -104,7 +104,7 @@
 }
 
 .faq-item.active .faq-number {
-  color: var(--accent-orange);
+  color: var(--brand-primary);
 }
 
 .faq-trigger h3 {
@@ -116,7 +116,7 @@
 }
 
 .faq-item.active .faq-trigger h3 {
-  color: var(--accent-orange);
+  color: var(--brand-primary);
 }
 
 .faq-toggle {
@@ -134,8 +134,8 @@
 
 .faq-item.active .faq-toggle {
   color: #ffffff;
-  background: var(--text-primary);
-  border-color: var(--text-primary);
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
   transform: rotate(180deg);
 }
 

@@ -1,5 +1,5 @@
 /* =========================================
-   PORTFOLIO — Clean, neutral, image-first
+   PORTFOLIO — Clean, brand-integrated
    ========================================= */
 .portfolio {
   position: relative;
@@ -36,7 +36,7 @@
   font-family: var(--font-mono);
   font-size: clamp(2rem, 3vw, 3.25rem);
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--brand-primary);
   line-height: 1;
   letter-spacing: -0.03em;
 }
@@ -92,7 +92,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--text-primary);
+  background: var(--brand-primary);
   border-radius: var(--radius-full);
   z-index: 1;
 }
@@ -131,9 +131,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 2px;
-  background: var(--text-primary);
-  opacity: 0.08;
+  height: 3px;
+  background: var(--brand-primary);
   z-index: 10;
 }
 
@@ -191,6 +190,7 @@
 .project-browser-frame:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-4px);
+  border-color: var(--border-brand);
 }
 
 .project-category-tag {
@@ -200,7 +200,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-muted);
+  color: var(--brand-primary);
   margin-bottom: 2rem;
 }
 
@@ -210,6 +210,20 @@
   color: var(--text-primary);
   margin-bottom: 0.75rem;
   letter-spacing: -0.02em;
+}
+
+.project-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-index-num {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: -0.01em;
 }
 
 .project-details p {
@@ -233,21 +247,17 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-primary);
+  color: var(--brand-primary);
   transition: var(--transition-fast);
 }
 
 .project-launch-link svg {
-  color: var(--text-muted);
+  color: var(--brand-primary);
   transition: var(--transition-fast);
 }
 
-.project-browser-frame:hover .project-launch-link {
-  color: var(--accent-orange);
-}
-
 .project-browser-frame:hover .project-launch-link svg {
-  color: var(--accent-orange);
+  transform: translate(3px, -2px);
 }
 
 .project-id-tag {
@@ -307,7 +317,7 @@
 }
 
 .additional-project-row:hover {
-  background: var(--bg-secondary);
+  background: var(--brand-soft);
 }
 
 .additional-project-row .row-id {
@@ -334,11 +344,11 @@
   font-family: var(--font-mono);
   font-size: 0.72rem;
   font-weight: 700;
-  color: var(--text-muted);
+  color: var(--brand-primary);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   padding: 0.25rem 0.65rem;
-  background: var(--bg-secondary);
+  background: var(--brand-soft);
   border-radius: var(--radius-full);
 }
 
@@ -357,8 +367,8 @@
 
 .additional-project-row:hover .row-link-btn {
   color: #ffffff;
-  background: var(--text-primary);
-  border-color: var(--text-primary);
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
 }
 
 /* RESPONSIVE */

@@ -44,7 +44,7 @@ function FAQ() {
     };
 
     return (
-        <section className="faq section-lg" id="faq" style={{ background: 'var(--bg-secondary)' }}>
+        <section className="faq section-lg" id="faq">
             <div className="container faq-container">
                 {/* Left — heading + stats */}
                 <motion.div
