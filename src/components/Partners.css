@@ -1,10 +1,11 @@
 /* =========================================
-   PARTNERS — Brand-integrated marquee
+   PARTNERS — Neutral taupe
    ========================================= */
 .partners {
   position: relative;
   padding: 8rem 0;
-  background: var(--bg-secondary);
+  background:
+    linear-gradient(180deg, #DED4C9 0%, #D8CEC3 100%);
   overflow: hidden;
 }
 
@@ -72,7 +73,7 @@
 .partners-btn:hover {
   border-color: var(--brand-primary);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(242, 84, 48, 0.18);
+  box-shadow: 0 8px 20px rgba(242, 80, 48, 0.18);
 }
 
 .partners-btn:hover .btn-icon {
@@ -89,7 +90,7 @@
   padding: 1.5rem 0;
   border-top: 1px solid var(--border-light);
   border-bottom: 1px solid var(--border-light);
-  background: var(--bg-card);
+  background: rgba(255, 249, 244, 0.5);
 }
 
 .partners-marquee-container::before,
@@ -105,12 +106,12 @@
 
 .partners-marquee-container::before {
   left: 0;
-  background: linear-gradient(90deg, var(--bg-card), transparent);
+  background: linear-gradient(90deg, rgba(255, 249, 244, 0.5), transparent);
 }
 
 .partners-marquee-container::after {
   right: 0;
-  background: linear-gradient(-90deg, var(--bg-card), transparent);
+  background: linear-gradient(-90deg, rgba(255, 249, 244, 0.5), transparent);
 }
 
 .partners-track {
@@ -155,7 +156,7 @@
 
 .partner-logo-item:hover {
   border-color: var(--border-brand);
-  background: var(--brand-soft);
+  background: var(--bg-card-hover);
   box-shadow: var(--shadow-sm);
   transform: translateY(-2px);
 }

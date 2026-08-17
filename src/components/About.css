@@ -1,9 +1,10 @@
 /* =========================================
-   ABOUT — Brand-integrated
+   ABOUT — Deep sand section
    ========================================= */
 .about {
   position: relative;
-  background: var(--bg-surface);
+  background:
+    linear-gradient(180deg, #EAE2D8 0%, #E5DCD1 100%);
   overflow: hidden;
 }
 
@@ -26,7 +27,7 @@
   font-size: clamp(3rem, 5vw, 5rem);
   font-weight: 900;
   letter-spacing: -0.04em;
-  color: var(--border-light);
+  color: rgba(32, 24, 23, 0.1);
   line-height: 1;
 }
 
@@ -89,7 +90,7 @@
 }
 
 .about-stat-item:hover {
-  background: var(--brand-soft);
+  background: rgba(255, 249, 244, 0.5);
 }
 
 .about-stat-item:hover .stat-name {

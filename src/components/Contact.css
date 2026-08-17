@@ -1,24 +1,34 @@
 /* =========================================
-   CONTACT — Deep brand section
+   CONTACT — Premium orange gradient section
    ========================================= */
 .contact {
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(circle at 30% 70%, rgba(242, 80, 48, 0.1) 0%, transparent 40%),
-    radial-gradient(circle at 80% 30%, rgba(53, 50, 48, 0.4) 0%, transparent 50%),
-    linear-gradient(160deg, #1D1B1A 0%, #191716 40%, #151312 100%);
+    radial-gradient(circle at 30% 70%, rgba(255, 138, 106, 0.2) 0%, transparent 40%),
+    linear-gradient(135deg, #E85A3F 0%, #D9573D 45%, #B94432 100%);
   color: #ffffff;
 }
 
 .contact::before {
   content: "";
   position: absolute;
-  bottom: -200px;
-  left: -150px;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(242, 80, 48, 0.08) 0%, transparent 70%);
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 79px,
+      rgba(255, 255, 255, 0.03) 79px,
+      rgba(255, 255, 255, 0.03) 80px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 79px,
+      rgba(255, 255, 255, 0.03) 79px,
+      rgba(255, 255, 255, 0.03) 80px
+    );
   pointer-events: none;
 }
 
@@ -43,7 +53,7 @@
 
 .contact-sub {
   font-size: 1.08rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 245, 240, 0.75);
   line-height: 1.75;
   max-width: 560px;
 }
@@ -56,15 +66,15 @@
   align-items: start;
 }
 
-/* FORM */
+/* FORM — light card on orange bg */
 .contact-form-wrap {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--bg-card);
+  border: 1px solid rgba(32, 24, 23, 0.08);
   border-radius: var(--radius-lg);
   padding: 3rem;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  box-shadow:
+    0 4px 24px rgba(32, 24, 23, 0.08),
+    0 16px 48px rgba(32, 24, 23, 0.12);
 }
 
 .contact-form-wrap form {
@@ -91,7 +101,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: rgba(255, 255, 255, 0.45);
+  color: var(--text-tertiary);
 }
 
 .form-field input,
@@ -100,9 +110,9 @@
   font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 500;
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-primary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
   border-radius: var(--radius-sm);
   padding: 0.85rem 1rem;
   outline: none;
@@ -112,7 +122,7 @@
 
 .form-field input::placeholder,
 .form-field textarea::placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--text-muted);
   font-weight: 400;
 }
 
@@ -120,13 +130,13 @@
 .form-field select:focus,
 .form-field textarea:focus {
   border-color: var(--brand-primary);
-  background: rgba(242, 80, 48, 0.05);
+  background: var(--bg-warm);
 }
 
 .form-field select {
   cursor: pointer;
   appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='rgba(255,255,255,0.4)' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 6l3.5 3.5L11.5 6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%238F827A' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 6l3.5 3.5L11.5 6'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 1rem center;
   padding-right: 2.5rem;
@@ -158,28 +168,28 @@
 }
 
 .form-submit:hover {
-  background: var(--brand-primary-light);
-  border-color: var(--brand-primary-light);
+  background: var(--brand-primary-dark);
+  border-color: var(--brand-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(242, 84, 48, 0.25);
+  box-shadow: 0 8px 20px rgba(242, 80, 48, 0.3);
 }
 
 .form-submit:disabled {
   opacity: 0.5;
   cursor: default;
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--text-muted);
 }
 
-/* CONTACT DETAILS */
+/* CONTACT DETAILS — light card on orange bg */
 .contact-details-panel {
   display: flex;
   flex-direction: column;
   gap: 0;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 249, 244, 0.95);
+  border: 1px solid rgba(32, 24, 23, 0.06);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(32, 24, 23, 0.08);
 }
 
 .contact-detail {
@@ -188,7 +198,8 @@
   gap: 1.25rem;
   padding: 2rem 2.5rem;
   transition: var(--transition-fast);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-primary);
 }
 
 .contact-detail:last-child {
@@ -196,7 +207,7 @@
 }
 
 .contact-detail:hover {
-  background: rgba(242, 80, 48, 0.05);
+  background: var(--bg-warm);
 }
 
 .cd-icon {
@@ -205,14 +216,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(242, 80, 48, 0.1);
+  background: var(--brand-soft);
   border-radius: var(--radius-md);
-  color: var(--brand-primary-light);
+  color: var(--brand-primary);
   flex-shrink: 0;
 }
 
 .contact-detail:hover .cd-icon {
-  background: rgba(242, 80, 48, 0.15);
+  background: var(--brand-soft-mid);
 }
 
 .cd-text {
@@ -227,18 +238,18 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.45);
+  color: var(--text-tertiary);
 }
 
 .cd-value {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--text-primary);
   text-decoration: none;
 }
 
 a.cd-value:hover {
-  color: var(--brand-primary-light);
+  color: var(--brand-primary);
 }
 
 /* RESPONSIVE */
@@ -254,7 +265,7 @@ a.cd-value:hover {
   .contact-detail {
     flex: 1;
     border-bottom: none;
-    border-right: 1px solid rgba(255, 255, 255, 0.06);
+    border-right: 1px solid var(--border-light);
     flex-direction: column;
     text-align: center;
     gap: 0.75rem;
@@ -284,7 +295,7 @@ a.cd-value:hover {
 
   .contact-detail {
     border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid var(--border-light);
     flex-direction: row;
     text-align: left;
   }

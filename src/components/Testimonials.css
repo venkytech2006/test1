@@ -1,12 +1,11 @@
 /* =========================================
-   TESTIMONIALS — Deep Brand Section
+   TESTIMONIALS — Rich charcoal with orange atmosphere
    ========================================= */
 .testimonials {
   position: relative;
   background:
-    radial-gradient(circle at 80% 20%, rgba(242, 80, 48, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 20% 80%, rgba(53, 50, 48, 0.5) 0%, transparent 50%),
-    linear-gradient(160deg, #1D1B1A 0%, #191716 40%, #151312 100%);
+    radial-gradient(circle at 80% 20%, rgba(242, 80, 48, 0.12) 0%, transparent 30%),
+    linear-gradient(135deg, #241A18 0%, #171312 100%);
   color: #ffffff;
   overflow: hidden;
 }
@@ -19,7 +18,7 @@
   right: -200px;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(242, 80, 48, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(242, 80, 48, 0.06) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -52,9 +51,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.6);
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 245, 240, 0.6);
+  background: rgba(255, 245, 240, 0.06);
+  border: 1px solid rgba(255, 245, 240, 0.1);
   border-radius: 50%;
   transition: var(--transition-fast);
 }
@@ -69,7 +68,7 @@
   font-family: var(--font-mono);
   font-size: 0.8rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 245, 240, 0.5);
   display: flex;
   align-items: baseline;
   gap: 0.3rem;
@@ -83,11 +82,11 @@
 }
 
 .test-sep {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 245, 240, 0.2);
 }
 
 .test-total {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 245, 240, 0.4);
 }
 
 /* EDITORIAL LAYOUT */
@@ -120,7 +119,7 @@
 .test-author-section {
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 245, 240, 0.1);
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -143,7 +142,7 @@
   font-family: var(--font-mono);
   font-size: 0.72rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 245, 240, 0.5);
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
@@ -178,20 +177,20 @@
   font-family: var(--font-mono);
   font-size: 0.72rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 245, 240, 0.5);
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
 .test-metric-index {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 245, 240, 0.3);
   font-weight: 700;
 }
 
 .test-metric-divider {
   width: 100%;
   height: 1px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 245, 240, 0.08);
 }
 
 /* RESPONSIVE */
@@ -204,7 +203,7 @@
   .test-metrics-side {
     flex-direction: row;
     gap: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(255, 245, 240, 0.08);
     padding-top: 0;
   }
 

@@ -1,14 +1,14 @@
 /* =========================================
-   HERO — Brand-led premium first impression
+   HERO — Rich champagne/peach first impression
    ========================================= */
 .hero {
   position: relative;
   overflow: hidden;
   padding: 12rem 0 0;
   background:
-    radial-gradient(circle at 75% 35%, rgba(242, 80, 48, 0.07) 0%, transparent 35%),
-    radial-gradient(circle at 20% 80%, rgba(252, 227, 216, 0.4) 0%, transparent 40%),
-    linear-gradient(135deg, #FCFAF7 0%, #FFFFFF 55%, #FFF5EF 100%);
+    radial-gradient(circle at 80% 30%, rgba(242, 80, 48, 0.10) 0%, transparent 32%),
+    radial-gradient(circle at 15% 80%, rgba(246, 221, 208, 0.5) 0%, transparent 40%),
+    linear-gradient(120deg, #F4EFE8 0%, #F6E9DF 55%, #F2D8CB 100%);
 }
 
 .hero::before {
@@ -20,15 +20,15 @@
       0deg,
       transparent,
       transparent 79px,
-      rgba(30, 25, 20, 0.025) 79px,
-      rgba(30, 25, 20, 0.025) 80px
+      rgba(32, 24, 23, 0.03) 79px,
+      rgba(32, 24, 23, 0.03) 80px
     ),
     repeating-linear-gradient(
       90deg,
       transparent,
       transparent 79px,
-      rgba(30, 25, 20, 0.025) 79px,
-      rgba(30, 25, 20, 0.025) 80px
+      rgba(32, 24, 23, 0.03) 79px,
+      rgba(32, 24, 23, 0.03) 80px
     );
   pointer-events: none;
 }
@@ -40,7 +40,7 @@
   left: 0;
   right: 0;
   height: 200px;
-  background: linear-gradient(to top, var(--bg-primary), transparent);
+  background: linear-gradient(to top, var(--bg-secondary), transparent);
   pointer-events: none;
   z-index: 1;
 }
@@ -71,7 +71,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--brand-primary);
-  background: var(--brand-soft);
+  background: rgba(255, 249, 244, 0.7);
   border: 1px solid var(--border-brand);
   border-radius: var(--radius-full);
   padding: 0.5rem 1rem;
@@ -170,8 +170,8 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow:
-    0 4px 24px rgba(30, 25, 20, 0.06),
-    0 16px 48px rgba(30, 25, 20, 0.08);
+    0 4px 24px rgba(32, 24, 23, 0.06),
+    0 16px 48px rgba(32, 24, 23, 0.08);
 }
 
 /* BROWSER BAR */
@@ -180,7 +180,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 1.25rem;
-  background: var(--bg-secondary);
+  background: var(--bg-warm);
   border-bottom: 1px solid var(--border-light);
 }
 
@@ -206,7 +206,7 @@
   font-family: var(--font-mono);
   font-size: 0.65rem;
   color: var(--text-muted);
-  background: var(--bg-primary);
+  background: var(--bg-card);
   padding: 0.3rem 0.75rem;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-light);
@@ -228,7 +228,7 @@
 }
 
 .d-card {
-  background: var(--bg-secondary);
+  background: var(--bg-warm);
   border-radius: var(--radius-md);
   padding: 1rem 1.25rem;
   display: flex;
@@ -265,7 +265,7 @@
 
 /* CHART */
 .d-chart {
-  background: var(--bg-secondary);
+  background: var(--bg-warm);
   border-radius: var(--radius-md);
   padding: 1rem 1.25rem;
 }

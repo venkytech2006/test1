@@ -1,10 +1,11 @@
 /* =========================================
-   FAQ — Brand-integrated clean accordion
+   FAQ — Warm cream section
    ========================================= */
 .faq {
   position: relative;
   overflow: hidden;
-  background: var(--bg-primary);
+  background:
+    linear-gradient(180deg, #F1E7DE 0%, #EDE3D9 100%);
 }
 
 .faq-container {

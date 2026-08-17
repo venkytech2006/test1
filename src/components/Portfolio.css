@@ -1,10 +1,11 @@
 /* =========================================
-   PORTFOLIO — Clean, brand-integrated
+   PORTFOLIO — Warm sand section
    ========================================= */
 .portfolio {
   position: relative;
   padding: 8rem 0;
-  background: var(--bg-primary);
+  background:
+    linear-gradient(180deg, #E7DED4 0%, #E4DAD0 100%);
   overflow: hidden;
 }
 
@@ -57,7 +58,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.35rem;
-  background: var(--bg-secondary);
+  background: rgba(255, 249, 244, 0.6);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-full);
 }
@@ -141,7 +142,7 @@
   display: flex;
   align-items: center;
   padding: 0.75rem 1.25rem;
-  background: var(--bg-secondary);
+  background: var(--bg-warm);
   border-bottom: 1px solid var(--border-light);
   gap: 1.25rem;
 }
@@ -268,7 +269,7 @@
   font-family: var(--font-heading);
   font-size: 2.75rem;
   font-weight: 900;
-  color: var(--border-light);
+  color: rgba(32, 24, 23, 0.06);
   line-height: 1;
   pointer-events: none;
 }
@@ -318,7 +319,7 @@
 }
 
 .additional-project-row:hover {
-  background: var(--brand-soft);
+  background: rgba(255, 249, 244, 0.4);
 }
 
 .additional-project-row .row-id {

@@ -1,9 +1,10 @@
 /* =========================================
-   BLOG — Brand-integrated editorial
+   BLOG — Soft sand section
    ========================================= */
 .blog {
   position: relative;
-  background: var(--bg-surface);
+  background:
+    linear-gradient(180deg, #EAE2D8 0%, #E6DDD3 100%);
   overflow: hidden;
 }
 
@@ -63,7 +64,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(28, 18, 20, 0.04), transparent 50%);
+  background: linear-gradient(to top, rgba(32, 24, 23, 0.04), transparent 50%);
   pointer-events: none;
 }
 
@@ -181,7 +182,7 @@
   font-size: 2rem;
   font-weight: 900;
   letter-spacing: -0.03em;
-  color: var(--border-light);
+  color: rgba(32, 24, 23, 0.08);
   line-height: 1;
 }
 

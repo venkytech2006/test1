@@ -2,8 +2,7 @@
 
 :root {
   /* ===========================
-     BRAND PALETTE — from Logo
-     Logo colors: #F25030 (orange), #201820 (dark)
+     BRAND PALETTE — Champagne + Sand + Peach + Orange + Charcoal
      =========================== */
 
   /* Brand Core */
@@ -12,45 +11,47 @@
   --brand-primary-light: #F97B5E;
   --brand-secondary: #FF8A6A;
 
-  /* Deep Brand — dark sections, navbar, footer, CTAs */
-  --brand-dark: #191716;
-  --brand-dark-mid: #232120;
-  --brand-dark-lighter: #353230;
+  /* Deep Brand — dark sections */
+  --brand-dark: #201817;
+  --brand-dark-mid: #2C2019;
+  --brand-dark-lighter: #3D2E28;
 
-  /* Soft Brand — section backgrounds, cards, tints */
-  --brand-soft: #FFF5F0;
-  --brand-soft-mid: #FFECE3;
-  --brand-soft-deep: #FDDDD3;
+  /* Soft Brand — tints */
+  --brand-soft: #F6DDD0;
+  --brand-soft-mid: #F5C7B8;
+  --brand-soft-deep: #F0B5A3;
 
-  /* Surfaces — warm ivory / cream / white system */
-  --bg-primary: #FCFAF7;
-  --bg-secondary: #F6F1EC;
-  --bg-warm: #FFF4EE;
-  --bg-surface: #FFFFFF;
-  --bg-card: #FFFFFF;
+  /* Surfaces — warm champagne/sand/peach system */
+  --bg-primary: #F4EFE8;
+  --bg-secondary: #EAE2D8;
+  --bg-warm: #F1E1D5;
+  --bg-peach: #F6DDD0;
+  --bg-surface: #F9F5F0;
+  --bg-card: #FFF9F4;
+  --bg-card-hover: #FFF4ED;
 
   /* Text */
-  --text-primary: #191716;
-  --text-secondary: #5C524D;
-  --text-tertiary: #8A7D76;
-  --text-muted: #ADA39C;
+  --text-primary: #201A18;
+  --text-secondary: #655A55;
+  --text-tertiary: #8F827A;
+  --text-muted: #ADA29B;
 
   /* Borders */
-  --border-light: rgba(30, 25, 20, 0.08);
-  --border-medium: rgba(30, 25, 20, 0.14);
+  --border-light: rgba(32, 24, 23, 0.08);
+  --border-medium: rgba(32, 24, 23, 0.14);
   --border-brand: rgba(242, 80, 48, 0.2);
 
   /* Shadows — warm-tinted */
-  --shadow-xs: 0 1px 3px rgba(30, 25, 20, 0.04);
-  --shadow-sm: 0 2px 12px rgba(30, 25, 20, 0.05);
-  --shadow-md: 0 8px 30px rgba(30, 25, 20, 0.07);
-  --shadow-lg: 0 16px 48px rgba(30, 25, 20, 0.10);
+  --shadow-xs: 0 1px 3px rgba(32, 24, 23, 0.04);
+  --shadow-sm: 0 2px 12px rgba(32, 24, 23, 0.05);
+  --shadow-md: 0 8px 30px rgba(32, 24, 23, 0.07);
+  --shadow-lg: 0 16px 48px rgba(32, 24, 23, 0.10);
   --shadow-brand: 0 8px 24px rgba(242, 80, 48, 0.15);
 
   /* Gradients */
   --gradient-brand: linear-gradient(135deg, #F25030, #FF8A6A);
   --gradient-brand-soft: linear-gradient(135deg, #FFF8F4 0%, #FFF0E8 50%, #FCE3D8 100%);
-  --gradient-dark: linear-gradient(135deg, #191716, #232120);
+  --gradient-dark: linear-gradient(135deg, #201817, #2C2019);
 
   /* Typography */
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -94,13 +95,11 @@ body {
   overflow-x: hidden;
   line-height: 1.65;
   font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* SCROLLBAR */
 ::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
 ::-webkit-scrollbar-thumb { background: var(--brand-primary); border-radius: var(--radius-full); }
 ::-webkit-scrollbar-thumb:hover { background: var(--brand-primary-dark); }
 
@@ -174,7 +173,7 @@ img {
 
 /* Dark section overrides for .section-label */
 .dark-section .section-label {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 245, 240, 0.4);
 }
 
 .dark-section .section-label span {
@@ -204,7 +203,7 @@ img {
   gap: 0.75rem;
   padding: 0.85rem 1.75rem;
   color: var(--text-primary);
-  background: var(--bg-surface);
+  background: var(--bg-card);
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-sm);
   font-size: 0.82rem;
@@ -227,7 +226,7 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--text-primary);
-  background: rgba(30, 25, 20, 0.06);
+  background: rgba(32, 24, 23, 0.06);
   border-radius: 50%;
   transition:
     background-color 250ms ease,
@@ -240,7 +239,7 @@ img {
   color: #ffffff;
   border-color: var(--brand-primary);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(242, 80, 48, 0.18);
+  box-shadow: 0 8px 20px rgba(242, 80, 48, 0.20);
 }
 
 .btn-primary:hover .btn-icon {
@@ -275,7 +274,7 @@ img {
   color: #ffffff;
   border-color: var(--brand-primary);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(242, 80, 48, 0.18);
+  box-shadow: 0 8px 20px rgba(242, 80, 48, 0.20);
 }
 
 .btn-secondary:hover svg {
