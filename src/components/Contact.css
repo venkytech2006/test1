@@ -4,7 +4,10 @@
 .contact {
   position: relative;
   overflow: hidden;
-  background: var(--brand-dark);
+  background:
+    radial-gradient(circle at 30% 70%, rgba(242, 80, 48, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(53, 50, 48, 0.4) 0%, transparent 50%),
+    linear-gradient(160deg, #1D1B1A 0%, #191716 40%, #151312 100%);
   color: #ffffff;
 }
 
@@ -15,7 +18,7 @@
   left: -150px;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(242, 80, 48, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(242, 80, 48, 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -55,12 +58,13 @@
 
 /* FORM */
 .contact-form-wrap {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-lg);
   padding: 3rem;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
 .contact-form-wrap form {
@@ -171,10 +175,11 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: var(--radius-lg);
   overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .contact-detail {

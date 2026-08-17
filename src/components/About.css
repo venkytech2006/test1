@@ -3,7 +3,7 @@
    ========================================= */
 .about {
   position: relative;
-  background: var(--bg-primary);
+  background: var(--bg-surface);
   overflow: hidden;
 }
 

@@ -2,7 +2,9 @@
    FOOTER — Deepest brand color
    ========================================= */
 .footer {
-  background: var(--brand-dark);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(242, 80, 48, 0.06) 0%, transparent 50%),
+    linear-gradient(180deg, #1D1B1A 0%, #191716 30%, #151312 100%);
   color: #ffffff;
   padding: 6rem 0 0;
   position: relative;

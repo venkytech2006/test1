@@ -3,7 +3,10 @@
    ========================================= */
 .testimonials {
   position: relative;
-  background: var(--brand-dark);
+  background:
+    radial-gradient(circle at 80% 20%, rgba(242, 80, 48, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 20% 80%, rgba(53, 50, 48, 0.5) 0%, transparent 50%),
+    linear-gradient(160deg, #1D1B1A 0%, #191716 40%, #151312 100%);
   color: #ffffff;
   overflow: hidden;
 }
@@ -16,7 +19,7 @@
   right: -200px;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(242, 80, 48, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(242, 80, 48, 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 

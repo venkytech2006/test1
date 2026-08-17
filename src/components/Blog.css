@@ -3,7 +3,7 @@
    ========================================= */
 .blog {
   position: relative;
-  background: var(--bg-primary);
+  background: var(--bg-surface);
   overflow: hidden;
 }
 
@@ -43,11 +43,13 @@
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
   overflow: hidden;
+  box-shadow: var(--shadow-sm);
   transition: var(--transition-smooth);
 }
 
 .blog-featured:hover {
   box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 .blog-feat-img {
