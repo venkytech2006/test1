@@ -1,0 +1,211 @@
+/* =========================================
+   TESTIMONIALS — Editorial Quote
+   ========================================= */
+.testimonials {
+  position: relative;
+  background: var(--bg-primary);
+  overflow: hidden;
+}
+
+.test-top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.test-nav-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.test-nav-btns {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.test-nav-btn {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  background: transparent;
+  border: 1px solid var(--border-light);
+  border-radius: 50%;
+  transition: var(--transition-fast);
+}
+
+.test-nav-btn:hover {
+  background: var(--text-primary);
+  color: #ffffff;
+  border-color: var(--text-primary);
+}
+
+.test-counter {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+}
+
+.test-current {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+/* EDITORIAL LAYOUT */
+.test-editorial {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.test-quote-section {
+  position: relative;
+}
+
+.test-quote-mark {
+  color: var(--border-light);
+  margin-bottom: 2.5rem;
+}
+
+.test-quote-text {
+  font-size: clamp(1.5rem, 2.4vw, 2.2rem);
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text-primary);
+  letter-spacing: -0.015em;
+  margin: 0;
+  font-style: normal;
+}
+
+.test-author-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.test-author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.test-author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.test-author-role {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* METRICS SIDE */
+.test-metrics-side {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.test-metric-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem 0;
+}
+
+.test-metric-number {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  color: var(--text-primary);
+}
+
+.test-metric-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.test-metric-index {
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.test-metric-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--border-light);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .test-editorial {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .test-metrics-side {
+    flex-direction: row;
+    gap: 0;
+    border-top: 1px solid var(--border-light);
+    padding-top: 0;
+  }
+
+  .test-metric-block {
+    flex: 1;
+    padding: 1.5rem;
+  }
+
+  .test-metric-divider {
+    width: 1px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .test-top-row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .test-metrics-side {
+    flex-direction: column;
+  }
+
+  .test-metric-divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .test-quote-text {
+    font-size: 1.25rem;
+  }
+}
